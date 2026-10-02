@@ -1,0 +1,30 @@
+spec_version: "0.1.0"
+name: vector-db-indexer
+version: 1.0.0
+description: Hnsw/ivfflat index parameter tuning, quantization optimization, and high-dimensional vector search tuning.
+author: "Rucha Salpure"
+license: MIT
+model:
+  preferred: claude-opus-4-6
+  fallback:
+    - claude-sonnet-4-5-20250929
+  constraints:
+    temperature: 0.2
+    max_tokens: 4096
+skills:
+  - hnsw-index-tuning
+tools: []
+delegation:
+  mode: auto
+runtime:
+  max_turns: 50
+  timeout: 300
+compliance:
+  risk_tier: standard
+  frameworks: []
+tags:
+  - data-engineering
+  - autonomous-agent
+  - opengap-verified
+metadata:
+  repository: "https://github.com/Rucha0901/vector-db-indexer"
